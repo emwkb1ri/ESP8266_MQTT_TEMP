@@ -34,6 +34,12 @@ struct Status {   // status json parameters
   byte mac[6];
   char wifi[15];
   int rssi;
+  char relay[10];
+  float DegC[5];
+  float DegF[5];
+  float vcc;
+  unsigned long runTime;
+  unsigned int msgCount;
 };
 
 //++++++++++++++++++++++
