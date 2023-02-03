@@ -38,10 +38,10 @@ bool connectMqtt() {
                       willMessage, cleanSession);
   // now report on connection status
   if (mqttConnectedFlag) {
-    Serial.println("MQTT broker connected");
+    Serial.println("...MQTT broker connected...");
   }
   else {
-    Serial.print("ERROR: MQTT connect failed - ");
+    Serial.print("...ERROR: MQTT connect failed - ");
     mqttState();
   }
 

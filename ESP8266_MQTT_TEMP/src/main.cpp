@@ -30,13 +30,14 @@
  * 0.01 - Changes for Elegant OTA - web controlled OTA update
  * 1.00 - Clean compiled version with several changes for the Platform
  *        IO / Visual Studio Code environment
+ * 1.01 - minor changes to console status messages
  * 
  ***********************************************************************/
 
 #include "main.h"
 
 // VERSION #define goes here
-#define VERSION "1.00"
+#define VERSION "1.01"
 #define PRG_NAME "ESP8266_MQTT_TEMP"
 extern const char version[] = VERSION;
 extern const char prgName[] = PRG_NAME;
@@ -151,7 +152,7 @@ void setup() {
     Serial.printf("\r\n++++ MQTT 2 - runTime= %lu ++++\r\n", status.runTime);
     ESP.restart();
   };
-  Serial.println("MQTT subscribed to '/cmd'");
+  Serial.println("...MQTT subscribed to '/cmd'...");
 }
 
 unsigned long previousTime = millis();
