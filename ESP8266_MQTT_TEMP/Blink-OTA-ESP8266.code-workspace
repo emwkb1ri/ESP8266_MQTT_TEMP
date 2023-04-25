@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../Blink-OTA-ESP8266"
+		},
+		{
+			"name": "ESP8266_MQTT_TEMP",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
